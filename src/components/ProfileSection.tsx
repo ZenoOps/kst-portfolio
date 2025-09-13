@@ -42,7 +42,7 @@ export const ProfileSection = () => {
         
         <div className="relative">
           <p className="text-10xl md:text-11xl text-muted-foreground font-medium tracking-wide">
-            AWS DevOps Enthusiast & Sr. NOC
+            Cloud Enthusiast & Sr. NOC Engineer
           </p>
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
                           w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent 
