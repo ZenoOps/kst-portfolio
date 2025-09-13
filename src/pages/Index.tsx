@@ -21,7 +21,7 @@ const Index = () => {
     {
       title: "Portfolio in the Cloud",
       description: "This project showcases my personal portfolio, built with HTML, CSS, and hosted on AWS Amplify. Out of others AWS Amplify offers the easiest way to host a web application with minimal configuration.",
-      techStack: ["HTML", "CSS", "AWS Amplify", "Route 53", "Lambda", "SNS"],
+      techStack: ["AWS Amplify", "Route 53", "Lambda", "SNS"],
       liveUrl: "/portfolio-in-the-cloud.png",
       githubUrl: "https://github.com/ZenoOps/kst-portfolio"
     },
@@ -41,44 +41,24 @@ const Index = () => {
       color: "orange" as const
     },
     {
-      category: "Programming & Scripting",
-      skills: ["Python", "Shell Scripting"],
-      color: "cyan" as const
-    },
-    {
-      category: "Databases",
-      skills: ["RDS", "DynamoDB", "ElastiCache"],
-      color: "green" as const
-    },
-    {
       category: "Containerization",
       skills: ["Docker", "ECS"],
       color: "purple" as const
     },
     {
       category: "VCS",
-      skills: ["Git", "GitHub", "GitLab", "AWS Code Commit"],
+      skills: ["Git", "AWS Code Commit"],
       color: "blue" as const
     },
     {
       category: "AWS Dev Tools",
-      skills: ["CodeCommit", "CodeBuild", "CodeDeploy", "CodePipeline", "Elastic Beanstalk"],
+      skills: ["CodeBuild", "CodeDeploy", "CodePipeline"],
       color: "orange" as const
     },
     {
       category: "IaC",
       skills: ["CloudFormation", "Terraform", "Ansible"],
       color: "cyan" as const
-    },
-    {
-      category: "Management Tools",
-      skills: ["CloudWatch", "CloudTrail", "AWS Config"],
-      color: "green" as const
-    },
-    {
-      category: "Security",
-      skills: ["IAM", "Cognito", "KMS"],
-      color: "purple" as const
     },
     {
       category: "AWS Networking",
@@ -246,10 +226,11 @@ const Index = () => {
             </h2>
           </ScrollReveal>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 place-items-stretch">
+
             {skillCategories.map((skill, index) => (
               <ScrollReveal key={index} delay={index * 100} direction="scale">
-                <SkillCard {...skill} />
+                <SkillCard {...skill} className="h-full" />
               </ScrollReveal>
             ))}
           </div>
