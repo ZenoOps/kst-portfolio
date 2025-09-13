@@ -71,15 +71,27 @@ export const ProfileSection = () => {
 
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 pt-8">
-        <AnimatedButton variant="hero">
-          <ExternalLink size={20} />
-          AWS Builder Center Profile
-        </AnimatedButton>
-        
-        <AnimatedButton variant="hero">
-          <Download size={20} />
-          Download Resume
-        </AnimatedButton>
+          {/* <a
+            href="https://builder.aws.com/community/zeno"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit AWS Builder Center Profile"
+          >
+            <AnimatedButton variant="hero">
+              <ExternalLink size={20} />
+              Kode
+            </AnimatedButton>
+          </a> */}
+          <a
+              href="/home/zeno/portfolio/src/assets/resume.pdf"
+              download
+              aria-label="Download Resume"
+          >
+            <AnimatedButton variant="hero">
+              <Download size={20} />
+              Download Resume
+            </AnimatedButton>
+          </a>
       </div>
 
       {/* Decorative elements */}

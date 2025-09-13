@@ -22,14 +22,14 @@ const Index = () => {
       title: "Portfolio in the Cloud",
       description: "This project showcases my personal portfolio, built with HTML, CSS, and hosted on AWS Amplify. Out of others AWS Amplify offers the easiest way to host a web application with minimal configuration.",
       techStack: ["HTML", "CSS", "AWS Amplify", "Route 53", "Lambda", "SNS"],
-      liveUrl: "https://kyawsoethet.com",
+      liveUrl: "/home/zeno/portfolio/src/assets/portfolio-in-the-cloud.png",
       githubUrl: "https://github.com/ZenoOps/my-aws-builder-challenge-website"
     },
     {
       title: "CI/CD on AWS",
       description: "A deployment of a CI/CD pipeline by using the AWS service with traditional approach. It automated the build and deployment process of containerized applications whenever the webhook triggered the pipeline.",
       techStack: ["AWS CodePipeline", "CodeBuild", "ECS", "CloudFormation", "Docker"],
-      liveUrl: "https://github.com/ZenoOps/CI-CD_lab",
+      liveUrl: "/home/zeno/portfolio/src/assets/CI-CD-on-AWS.png",
       githubUrl: "https://github.com/ZenoOps/CI-CD_lab"
     }
   ];
