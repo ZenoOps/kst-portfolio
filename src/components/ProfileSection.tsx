@@ -83,7 +83,7 @@ export const ProfileSection = () => {
             </AnimatedButton>
           </a> */}
           <a
-              href="/home/zeno/portfolio/src/assets/resume.pdf"
+              href="/resume.pdf"
               download
               aria-label="Download Resume"
           >
