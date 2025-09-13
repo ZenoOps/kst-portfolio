@@ -165,7 +165,7 @@ const Index = () => {
     { 
       name: "Automation with Ansible", 
       icon: Briefcase,
-      url: "#",
+      url: "/LabEx-Ansible.png",
       image: "/LabEx-Ansible.png"
     }
   ];
