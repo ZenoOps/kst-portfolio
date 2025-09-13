@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+![Hosting diagram](/public/portfolio-in-the-cloud.png)
 
 ## Project info
 
