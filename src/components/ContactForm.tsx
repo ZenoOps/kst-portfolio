@@ -16,20 +16,42 @@ export const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+  // ✅ Replace this with your actual Lambda endpoint
+  const lambdaUrl = "https://363lmbjugnd5a2gmb7ircjswwm0mkqbh.lambda-url.ap-southeast-2.on.aws/";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message Sent! ✨",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+
+    try {
+      const response = await fetch(lambdaUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      toast({
+        title: "Message Sent! ✨",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Uh oh, something went wrong!",
+        description: "Please try again later or contact me directly.",
+        variant: "destructive",
+      });
+      console.error("Contact form error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -109,8 +131,9 @@ export const ContactForm = () => {
           <AnimatedButton 
             variant="hero" 
             className="w-full"
-            onClick={() => {}}
-          >
+            onClick={() => {}} // optional: can remove this line entirely
+            type="submit">
+          
             <Send size={20} className={isSubmitting ? "animate-bounce" : ""} />
             {isSubmitting ? "Sending..." : "Send Message"}
           </AnimatedButton>
