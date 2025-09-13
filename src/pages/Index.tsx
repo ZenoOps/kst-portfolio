@@ -20,29 +20,29 @@ const Index = () => {
   const projects = [
     {
       title: "Portfolio in the Cloud",
-      description: "This project showcases my personal portfolio, built with HTML, CSS, and hosted on AWS Amplify. Our DevOps team also offers the easiest way to host a web application with minimal cost and effort.",
-      techStack: ["HTML", "CSS", "AWS Amplify", "DevOps", "Web Hosting"],
-      liveUrl: "https://portfolio.example.com",
-      githubUrl: "https://github.com/portfolio"
+      description: "This project showcases my personal portfolio, built with HTML, CSS, and hosted on AWS Amplify. Out of others AWS Amplify offers the easiest way to host a web application with minimal configuration.",
+      techStack: ["HTML", "CSS", "AWS Amplify", "Route 53", "Lambda", "SNS"],
+      liveUrl: "https://kyawsoethet.com",
+      githubUrl: "https://github.com/ZenoOps/my-aws-builder-challenge-website"
     },
     {
       title: "CI/CD on AWS",
-      description: "Building a complete pipeline on AWS with CodePipeline. A deployment of CI/CD pipeline by using the AWS services with traditional approaches that eliminates the build and deployment process of containerized applications whenever the workload triggered the pipeline.",
-      techStack: ["AWS CodePipeline", "CI/CD", "Docker", "AWS Services", "DevOps"],
-      liveUrl: "https://cicd.example.com",
-      githubUrl: "https://github.com/cicd-aws"
+      description: "A deployment of a CI/CD pipeline by using the AWS service with traditional approach. It automated the build and deployment process of containerized applications whenever the webhook triggered the pipeline.",
+      techStack: ["AWS CodePipeline", "CodeBuild", "ECS", "CloudFormation", "Docker"],
+      liveUrl: "https://github.com/ZenoOps/CI-CD_lab",
+      githubUrl: "https://github.com/ZenoOps/CI-CD_lab"
     }
   ];
 
   const skillCategories = [
     {
       category: "Networking",
-      skills: ["CCNA", "Mikrotik", "Network LINUX"],
+      skills: ["CCNA", "CCNP", "Mikrotik", "Huawei U2000"],
       color: "orange" as const
     },
     {
       category: "Programming & Scripting",
-      skills: ["Scripting", "Bash", "Shell Scripting"],
+      skills: ["Python", "Shell Scripting"],
       color: "cyan" as const
     },
     {
@@ -52,17 +52,17 @@ const Index = () => {
     },
     {
       category: "Containerization",
-      skills: ["Docker", "ECS", "EKS"],
+      skills: ["Docker", "ECS"],
       color: "purple" as const
     },
     {
-      category: "VoIP",
-      skills: ["SIP", "RTP", "GSL SIM", "AWS Code Commit"],
+      category: "VCS",
+      skills: ["Git", "GitHub", "GitLab", "AWS Code Commit"],
       color: "blue" as const
     },
     {
-      category: "AWS Dev-TOOLS",
-      skills: ["CloudFormation", "CloudWatch", "CloudTrail", "CloudSystem", "AWS Config"],
+      category: "AWS Dev Tools",
+      skills: ["CodeCommit", "CodeBuild", "CodeDeploy", "CodePipeline", "Elastic Beanstalk"],
       color: "orange" as const
     },
     {
@@ -82,50 +82,92 @@ const Index = () => {
     },
     {
       category: "AWS Networking",
-      skills: ["VPC", "Route53", "CloudFront"],
+      skills: ["VPC", "CloudFront", "Route 53"],
       color: "blue" as const
     }
   ];
 
   const timelineData = [
     {
-      year: "2024",
+      year: "2021",
       title: "Started Networking Journey",
-      description: "Where my journey in the IT field began by studying for the CompTIA Network+ certification. This foundational step sparked my interest in networking concepts and technologies, laying the groundwork for my future career in network operations and cloud computing.",
+      description: "Began my journey in the IT and Networking field by studying for the CompTIA Network+ certification. This foundational step sparked my interest in networking concepts and technologies, laying the groundwork for my future career in network operations and cloud computing.",
       highlights: [
         "CompTIA Network+ certification studies",
         "Foundational networking concepts",
         "Network protocols and technologies"
-      ],
-      isActive: true
-    },
-    {
-      year: "2023",
-      title: "Junior Network Operations Center Engineer", 
-      description: "Joined as a Junior NOC Engineer, responsible for overall operation processes between internal teams and maintaining network stability.",
-      highlights: [
-        "Monitor network performance and troubleshoot issues",
-        "Assign technical standard defect to be resolved and escalated to Tier II Support",
-        "Maintained the network infrastructure"
       ]
     },
     {
       year: "2022",
+      title: "Junior Network Operations Center Engineer", 
+      description: "Joined an ISP as a Junior NOC Engineer, responsible for smooth operation processes between internal teams and monitoring the network stability.",
+      highlights: [
+        "Assigned customer complaint tickets to the relevant LSP and FE teams",
+        "Documented incidents and performed network analysis for reporting and further network optimizations",
+        "Monitored the network infrastructure"
+      ]
+    },
+    {
+      year: "2023",
       title: "Senior Network Operations Center Engineer",
       description: "Promoted to Senior NOC, leading a team to ensure the stability and performance of network operations and the infrastructure.",
       highlights: [
-        "Lead and managed network backup to ensure consistent and efficient",
-        "Troubleshooted complex network incidents to ensure 99.9% system reliability",
-        "Optimized network performance to ensure fewer errors and downtime in the infrastructure"
+        "Troubleshot and resolved network incidents to minimize downtime and impact",
+        "Worked with cross teams for seamless operations and problem-solving",
+        "Monitored network performance to ensure there were no intermittent performances in the infrastructure",
+        "Documented incident reports and provided network status to Manager and Chief Technology Officer",
+        "Trained and mentored junior NOC engineers to enhance team skills"
+      ]
+    },
+    {
+      year: "2025",
+      title: "AWS re/Start Program Graduate",
+      description: "Graduating from the AWS re/Start program was a transformative experience to expand my skills set. Over several months, I immersed myself in cloud fundamentals, hands-on labs, and real-world projects, collaborating with passionate peers and expert instructors. The program not only boosted my technical skills but also gave me the confidence to tackle new challenges and pursue a career in the cloud industry.",
+      highlights: [
+        "Cloud fundamentals and hands-on labs",
+        "Real-world AWS projects and collaboration",
+        "Enhanced technical skills and confidence"
+      ],
+      isActive: true
+    },
+    {
+      year: "2025",
+      title: "Freelancing and Learning",
+      description: "Driven by a passion for Cloud and DevOps, I enjoy designing scalable cloud solutions, automating workflows, solving real-world problems and actively seeking out opportunities to collaborate on freelance projects that challenge me to learn and grow.",
+      highlights: [
+        "Designing scalable cloud solutions",
+        "Automating workflows and solving real-world problems",
+        "Collaborating on challenging freelance projects"
       ]
     }
   ];
 
   const certifications = [
-    { name: "AWS Cloud Practitioner", icon: Award },
-    { name: "Linux Certified Candidate", icon: Trophy },
-    { name: "AWS Cloud-Cloud Practitioner", icon: Star },
-    { name: "Automation with Ansible", icon: Briefcase }
+    { 
+      name: "AWS Cloud Practitioner", 
+      icon: Award,
+      url: "https://www.credly.com/badges/eff8b4dd-42ef-4d81-a48c-2c3973f041d0/public_url",
+      image: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+    },
+    { 
+      name: "AWS re/Start Graduate", 
+      icon: Trophy,
+      url: "https://www.credly.com/badges/9be95740-840d-4497-a959-37621354d1c5/public_url",
+      image: "https://images.credly.com/size/680x680/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png"
+    },
+    { 
+      name: "AWS Cloud Quest Practitioner", 
+      icon: Star,
+      url: "https://www.credly.com/badges/d3025ad1-67e4-4e17-9faf-55f499e5a4d0/public_url",
+      image: "https://images.credly.com/size/680x680/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png"
+    },
+    { 
+      name: "Automation with Ansible", 
+      icon: Briefcase,
+      url: "#",
+      image: "/LabEx-Ansible.png"
+    }
   ];
 
   return (
@@ -228,19 +270,36 @@ const Index = () => {
               const IconComponent = cert.icon;
               return (
                 <ScrollReveal key={index} delay={index * 150} direction="up">
-                  <Card className="group text-center p-8 bg-card/80 backdrop-blur-sm border-border/20 
-                                  hover:border-primary/30 transition-all duration-500 hover:shadow-2xl 
-                                  hover:shadow-primary/10 hover:-translate-y-2 transform-gpu">
-                    <CardContent className="space-y-4">
-                      <div className="mx-auto w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center 
-                                      group-hover:bg-primary/20 transition-colors duration-300">
-                        <IconComponent className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-                      </div>
-                      <h3 className="font-semibold text-sm leading-tight group-hover:text-primary transition-colors duration-300">
-                        {cert.name}
-                      </h3>
-                    </CardContent>
-                  </Card>
+                  <a 
+                    href={cert.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block group"
+                  >
+                    <Card className="text-center p-8 bg-card/80 backdrop-blur-sm border-border/20 
+                                    hover:border-primary/30 transition-all duration-500 hover:shadow-2xl 
+                                    hover:shadow-primary/10 hover:-translate-y-2 transform-gpu">
+                      <CardContent className="space-y-4">
+                        {cert.image ? (
+                          <div className="mx-auto w-16 h-16 rounded-2xl overflow-hidden">
+                            <img 
+                              src={cert.image} 
+                              alt={cert.name}
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                        ) : (
+                          <div className="mx-auto w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center 
+                                          group-hover:bg-primary/20 transition-colors duration-300">
+                            <IconComponent className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                          </div>
+                        )}
+                        <h3 className="font-semibold text-sm leading-tight group-hover:text-primary transition-colors duration-300">
+                          {cert.name}
+                        </h3>
+                      </CardContent>
+                    </Card>
+                  </a>
                 </ScrollReveal>
               );
             })}
