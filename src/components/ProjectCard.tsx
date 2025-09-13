@@ -61,7 +61,7 @@ export const ProjectCard = ({
         <div className="flex gap-3 pt-2">
           {liveUrl && (
             <AnimatedButton 
-              variant="ghost" 
+              variant="hero" 
               onClick={() => window.open(liveUrl, '_blank')}
               className="flex-1 text-sm"
             >
@@ -71,7 +71,7 @@ export const ProjectCard = ({
           )}
           {githubUrl && (
             <AnimatedButton 
-              variant="ghost" 
+              variant="hero" 
               onClick={() => window.open(githubUrl, '_blank')}
               className="flex-1 text-sm"
             >

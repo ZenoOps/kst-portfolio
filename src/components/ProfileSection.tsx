@@ -76,7 +76,7 @@ export const ProfileSection = () => {
           AWS Builder Center Profile
         </AnimatedButton>
         
-        <AnimatedButton variant="ghost">
+        <AnimatedButton variant="hero">
           <Download size={20} />
           Download Resume
         </AnimatedButton>

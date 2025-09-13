@@ -128,8 +128,10 @@ const Index = () => {
         "Cloud fundamentals and hands-on labs",
         "Real-world AWS projects and collaboration",
         "Enhanced technical skills and confidence"
-      ],
-      isActive: true
+      ]
+    // 
+    //  isActive: true
+    // 
     },
     {
       year: "2025",
@@ -192,13 +194,13 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-8">
+      <section className="py-12 px-8">
         <div className="max-w-6xl mx-auto space-y-12">
           <ScrollReveal>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 
-                          bg-gradient-to-r from-primary via-accent to-primary 
-                          bg-clip-text text-transparent">
-              Projects
+            <h2 className="text-4xl md:text-5xl md:leading-[3] font-bold text-center mb-16
+                        bg-gradient-to-r from-primary via-accent to-primary 
+                        bg-clip-text text-transparent">
+                Projects
             </h2>
           </ScrollReveal>
           
