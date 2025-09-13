@@ -53,17 +53,17 @@ export const ProfileSection = () => {
       {/* Social Links */}
       <div className="flex gap-6">
         <SocialIcon
-          href="https://github.com"
+          href="https://github.com/ZenoOps"
           icon={<Github size={24} />}
           label="GitHub"
         />
         <SocialIcon
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/kyaw-soe-thet"
           icon={<Linkedin size={24} />}
           label="LinkedIn"
         />
         <SocialIcon
-          href="mailto:kyawsoethet@example.com"
+          href="mailto:kyawsoe.thet27@gmail.com"
           icon={<Mail size={24} />}
           label="Email"
         />
