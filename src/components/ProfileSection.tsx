@@ -35,13 +35,13 @@ export const ProfileSection = () => {
 
       {/* Name and Title */}
       <div className="space-y-4">
-        <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary 
+        <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-accent to-primary 
                        bg-clip-text text-transparent animate-gradient-shift gradient-shift">
           Kyaw Soe Thet
         </h1>
         
         <div className="relative">
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium tracking-wide">
+          <p className="text-10xl md:text-11xl text-muted-foreground font-medium tracking-wide">
             AWS DevOps Enthusiast & Sr. NOC
           </p>
           <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
