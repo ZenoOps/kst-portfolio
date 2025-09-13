@@ -116,7 +116,7 @@ const Index = () => {
     {
       year: "2025",
       title: "Freelancing and Learning",
-      description: "Driven by a passion for Cloud and DevOps, I enjoy designing scalable cloud solutions, automating workflows, solving real-world problems and actively seeking out opportunities to collaborate on freelance projects that challenge me to learn and grow.",
+      description: "Currently studying Bachelor of Information Technology but driven by the passion for Cloud and DevOps, I enjoy designing scalable cloud solutions, automating workflows, solving real-world problems and actively seeking out opportunities to collaborate on freelance projects that challenge me to learn and grow.",
       highlights: [
         "Designing scalable cloud solutions",
         "Automating workflows and solving real-world problems",
