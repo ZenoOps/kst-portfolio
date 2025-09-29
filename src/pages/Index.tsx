@@ -142,7 +142,7 @@ const Index = () => {
       name: "AWS Cloud Quest Practitioner", 
       icon: Star,
       url: "https://www.credly.com/badges/d3025ad1-67e4-4e17-9faf-55f499e5a4d0/public_url",
-      image: "https://images.credly.com/size/680x680/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png"
+      image: "https://images.credly.com/size/680x680/images/30816e43-2550-4e1c-be22-3f03c5573bb9/blob"
     },
     { 
       name: "Automation with Ansible", 
